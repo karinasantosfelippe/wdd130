@@ -109,7 +109,7 @@ header nav a {
 
 .hero article {
     position: absolute;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     margin: 7rem 1rem 1rem 1rem;
     width: 760px;
     opacity: 80%;
