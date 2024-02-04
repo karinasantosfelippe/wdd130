@@ -16,48 +16,73 @@
     --nav-hover-background-color: var(--accent2-color);
 }
 
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 150px 1fr 4fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 800px;
+}
+
 header img {
     float: left;
-    width: 60px;
+    width: 120px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    padding: 1rem 0 1rem 0;
+}
+
+h2 {
+    text-align: center;
 }
 
 p {
-    padding: 25px;
+    padding: 1rem;
 }
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 600px;
+    max-width: 800px;
     padding: 20px;
 }
 
 body header {
-    padding: 20px;
+    padding: 15px;
     background-color: var(--primary-color);
 }
 
-nav {
+header nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    text-align: right;
+	list-style: none;
 }
 
-nav a {
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+header nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    text-wrap: nowrap;
+	flex: 1 1 100%;
+    padding-left: 1.8rem;
 }
 
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+.flex {
+    display: flex;
 }
-
 
 .sociallinks {
     color: var(--nav-hover-link-color);
@@ -78,32 +103,66 @@ nav a:link, nav a:visited {
 
 .hero img {
     display: block;
+    width: 800px;
     height: auto;
 }
 
 .hero article {
     position: absolute;
-    color: var(--accent1-color);
+    color: var(--accent2-color);
     margin: 7rem 1rem 1rem 1rem;
-    opacity: 85%;
+    width: 760px;
+    opacity: 80%;
 }
 
 .hero article p {
     background-color: var(--primary-color);
     text-align: justify;
+    height: 8.5rem;
 }
 
 .hero article img {
     clear: both;
     float: right;
+    height: auto;
     width: 200px;
-    margin: 1.5rem .5rem 1.5rem .5rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 main section p {
     text-align: justify;
 }
 
-footer {
-    text-align: center;
+#adventure {
+    display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	align-items: center;
+	max-width: 800px;
+}
+
+main section img {
+    width: 100px;
+}
+
+footer section {
+    display: grid;
+	grid-template-columns: 500px 1fr 1fr;
+    width: 780px;
+    margin: 3rem 1rem 10rem 1rem;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+footer nav {
+    display: flex;
+    padding: .5rem .5rem .5rem .5rem;
+}
+
+footer nav a img {
+    width: 35px;
+    padding: .2rem 1rem 0 1rem;
+}
+
+footer nav a:hover {
+    background-color: var(--nav-hover-link-color);
 }

@@ -16,15 +16,38 @@
     --nav-hover-background-color: var(--accent2-color);
 }
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 150px 1fr 4fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 600px;
+}
+
+header img {
+    float: left;
+    width: 120px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    padding: 1rem 0 1rem 0;
+}
+
+p {
+    padding: 1rem;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 600px;
+    padding: 20px;
 }
 
 body header {
@@ -32,28 +55,45 @@ body header {
     background-color: var(--primary-color);
 }
 
-p {
-    padding: 25px;
-}
-
-nav {
+header nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    text-align: right;
+	list-style: none;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
 }
 
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
+    text-wrap: nowrap;
+	flex: 1 1 100%;
+    padding-left: 1.8rem;
+}
+
+.flex {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 1rem;
+}
+
+footer nav {
+    background-color: var(--nav-background-color);
+    display: flex;
+    text-align: center;
+	list-style: none;
     padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
 }
