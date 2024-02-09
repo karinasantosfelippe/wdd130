@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Karina Santos Felippe | WDD 130 </title>
+        <meta name="description" content="Webpage with HTML and CSS quiz, as part of Web Fundamentals class assignments">
+        <meta name="author" content="Karina Santos Felippe">
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <div class="form-item">
+                        <label for="q1">1. What does the acronym CSS stand for? </label>
+                        <input type="text" id="q1" name="q1" placeholder="Write your text here">
+                    </div>
+                    <div class="form-item">
+                        <label for="q2">2. How are id and class attributes selected in CSS?</label>
+                        <textarea id="q2" name="q2" rows="4" placeholder="Write your text here"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <label for="q3">3. Wich of the following is a valid CSS comment?</label>
+                        <select id="q3" name="q3">
+                            <option value="" selected disabled>Choose one...</option>
+                            <option value="chrome">Option 1</option>
+                            <option value="firefox">Option 2</option>
+                            <option value="safari">Option 3</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="q4">4. What is the bottom margin given this declaration? </label>
+                        <label class="example">margin: 10px 5px 15px;</label>
+                        <input type="number" id="q4" name="q4">
+                    </div>
+                </fieldset>
+                <div class="button">
+                    <button type="submit">Submit Poll</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;2024 | HTML Form - Quiz Activity | Karina Santos Felippe</p>
+        </footer>
+    </body>
+</html>
