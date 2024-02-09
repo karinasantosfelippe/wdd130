@@ -108,11 +108,11 @@ header nav a {
     color: var(--accent1-color);
     margin: 7rem 1rem 1rem 1rem;
     width: 760px;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .hero article p {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     text-align: justify;
     height: 8.5rem;
 }
