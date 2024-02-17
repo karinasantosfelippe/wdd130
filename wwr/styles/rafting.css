@@ -411,7 +411,54 @@ footer nav a:hover {
 
 .cls-info-grid {
     grid-template-columns: 350px 2fr;
+}
+
+.cls-info-grid-margin {
     margin: 2rem 4rem 4rem 4rem;
+}
+
+.cls-newsletter-grid {
+    grid-template-columns: 50% 50%;
+    margin: 0 2rem;
+    width: 700px;
+    height: 300px;
+}
+
+.cls-newsletter-grid section {
+    width: 400px;
+}
+
+.cls-newsletter-card {
+    margin: 4rem 150px;
+}
+
+.cls-newsletter-card h2 {
+    padding-bottom: 0;
+}
+
+.cls-newsletter-card p {
+    margin: 0;
+    text-align: center;
+}
+
+.cls-newsletter-card input{
+    display: grid;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--accent2-color);
+    width: 250px;
+}
+
+.cls-newsletter-card button {
+    margin-top: .5rem;
+    width: 150px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.cls-newsletter-card button:hover{
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .cls-trips-table table {
@@ -448,7 +495,7 @@ footer nav a:hover {
 
 .cls-trip-grid {
     grid-template-columns: 50% 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 700px;
 }
 
@@ -460,6 +507,17 @@ footer nav a:hover {
 
 .cls-trip-card p{
     text-align: justify;
+}
+
+.cls-light-backgorund {
+    background-color: var(--accent1-color);
+    height: auto;
+}
+
+.cls-full-img img {
+    margin: 0;
+    padding: 0;
+    width: 300px;
 }
 
 #kayak-alone-img {
@@ -484,4 +542,24 @@ footer nav a:hover {
     margin: 1rem 2.8rem .5rem .5rem;
     width: 130px;
     float: right;
+}
+
+#home-boat-group-img, #home-kayak-group-img{
+    margin: 0;
+    margin-left: -10px;
+    width: 315px;
+    border: 2px solid var(--accent2-color);
+    border-radius: .5rem;
+}
+
+.cls-no-border {
+    border: none;
+}
+
+.cls-title-alone {
+    margin-bottom: 20px;
+}
+
+#purpose-grid {
+    margin-bottom: 0;
 }
