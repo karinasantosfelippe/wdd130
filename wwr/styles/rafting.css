@@ -43,7 +43,7 @@ body {
 }
 
 body header {
-    padding: 15px;
+    padding: 20px;
     background-color: var(--primary-color);
 }
 
@@ -128,13 +128,6 @@ header nav a {
     margin: 1rem 1rem 1rem 1rem;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 200px 1fr 4fr;
-	align-items: center;
-	max-width: 800px;
-}
-
 .page-block {
     text-align: center;
 }
@@ -159,14 +152,6 @@ header nav a {
 
 .page-block h1{
     padding-top: 2rem;
-}
-
-.information {
-    display: grid;
-    grid-template-columns: 350px 2fr;
-	align-items: center;
-	max-width: 800px;
-    margin: 2rem 4rem 4rem 4rem;
 }
 
 #headquarter-info {
@@ -367,7 +352,6 @@ footer nav a:hover {
     justify-content: center;
     align-items: center;
     background-color: var(--accent2-color);
-    opacity: 95%;
     position: relative;
 }
 
@@ -375,11 +359,15 @@ footer nav a:hover {
     padding-right: 1rem;
 }
 
+.cls-position-absolute {
+    position: absolute;
+}
+
 .back-img {
-    background-image: url("/WDD130/wdd130/wwr/images/hero00.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+    width: 800px;
+    opacity: 80%;
+    height: 500px;
+    padding-top: 4px;
 }
 
 .call-to-action-button {
@@ -404,4 +392,90 @@ footer nav a:hover {
   cursor: pointer;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
+}
+
+.cls-grid {
+	display: grid;
+	align-items: center;
+	max-width: 800px;
+}
+
+.cls-header-grid {
+	grid-template-columns: 200px 1fr 4fr;
+}
+
+.cls-info-grid {
+    grid-template-columns: 350px 2fr;
+    margin: 2rem 4rem 4rem 4rem;
+}
+
+.cls-trips-table table {
+    border: 1px solid var(--accent2-color);
+    margin-top: -90px;
+    background-color: var(--accent1-color);
+    width: 500px;
+}
+
+.cls-trips-table table th,td {
+  border: 1px solid var(--accent2-color);
+  padding: 8px 10px;
+}
+
+.cls-trips-table table th {
+  color: var(--accent2-color);
+}
+
+.cls-trips-table table tbody > tr:nth-of-type(even) {
+    background-color: rgb(123 204 197 / 50%);
+}
+
+.cls-trips-table table thead {
+    background-color: rgb(64 35 26 / 80%);
+}
+
+.cls-trips-table table caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+  font-size: small;
+  color: var(--secondary-color);
+}
+
+.cls-trip-grid {
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2rem;
+}
+
+.cls-trip-card {
+    margin: 1.5rem;
+    height: 300px;
+    background-color: var(--primary-color);
+}
+
+.cls-trip-card p{
+    text-align: justify;
+}
+
+#kayak-alone-img {
+    margin: 1rem 1rem 1rem 3.3rem;
+    width: 120px;
+    float: left;
+}
+
+#boat-alone-img {
+    margin: 1rem 3.3rem 1rem 1rem;
+    width: 120px;
+    float: right;
+}
+
+#kayak-group-img{
+    margin: 1rem 1rem 1rem 3.9rem;
+    width: 130px;
+    float: left;
+}
+
+#boat-group-img {
+    margin: 1rem 3.9rem 1rem 1rem;
+    width: 130px;
+    float: right;
 }
