@@ -381,6 +381,7 @@ footer nav a:hover {
   line-height: 22px;
   display: flex;
   align-items: center;
+  text-decoration: none;
   
   box-shadow: 2px 7px 96px -2px var(--accent1-color);
   -webkit-box-shadow: 2px 7px 96px -2px var(--accent1-color);
@@ -392,6 +393,10 @@ footer nav a:hover {
   cursor: pointer;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
+}
+
+.call-to-action-button img{
+    padding-right: 1rem;
 }
 
 .cls-grid {
