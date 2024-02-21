@@ -116,7 +116,6 @@ header nav a {
 
 .hero article p {
     background-color: var(--accent2-color);
-    text-align: justify;
     height: 8.5rem;
 }
 
@@ -265,10 +264,6 @@ input {
 .form-item {
     display: grid;
     margin-bottom: 15px;
-}
-
-main section p {
-    text-align: justify;
 }
 
 #adventure {
@@ -433,10 +428,6 @@ footer nav a:hover {
     margin: 4rem 150px;
 }
 
-.cls-newsletter-card h2 {
-    padding-bottom: 0;
-}
-
 .cls-newsletter-card p {
     margin: 0;
     text-align: center;
@@ -506,7 +497,7 @@ footer nav a:hover {
     background-color: var(--primary-color);
 }
 
-.cls-trip-card p{
+.cls-txt-align-justify {
     text-align: justify;
 }
 
